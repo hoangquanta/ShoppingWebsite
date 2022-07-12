@@ -7,11 +7,11 @@
   
   <context-param>
     <param-name>username</param-name>
-    <param-value>someone</param-value>
+    <param-value>admin</param-value>
   </context-param>
   <context-param>
     <param-name>password</param-name>
-    <param-value>somepassword</param-value>
+    <param-value>admin</param-value>
   </context-param>
   
   <servlet-mapping>
@@ -19,9 +19,4 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
   
-  <servlet>
-    <servlet-name>CheckAuthServlet</servlet-name>
-    <servlet-class>Controller.LoginServlet</servlet-class>
-  </servlet>
-
 </web-app>

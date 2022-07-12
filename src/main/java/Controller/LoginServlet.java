@@ -48,7 +48,9 @@ public class LoginServlet extends HttpServlet {
 			} else {
 				RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 				rd.include(request, response);
-				response.getWriter().println("<font color='red'>Username or password is invalid</font>");
+				if (username != null) {
+					response.getWriter().println("<font color='red'>Username or password is invalid</font>");					
+				}
 			}
 		} catch (Exception ex) {
 			response.getWriter().println(ex);

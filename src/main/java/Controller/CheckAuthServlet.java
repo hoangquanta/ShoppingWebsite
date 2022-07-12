@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class CheckAuthServlet
  */
-@WebServlet("/")
+@WebServlet("")
 public class CheckAuthServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,12 +29,12 @@ public class CheckAuthServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		boolean loginStatus;
 		HttpSession session = request.getSession();
-		if (session.getAttribute("loginStatus") == null)
-			loginStatus = false;
-		else loginStatus = (boolean) session.getAttribute("loginStatus");
 		
+		//Define login status		
+		boolean loginStatus = (session.getAttribute("loginStatus") != null) ? (boolean) session.getAttribute("loginStatus") : false;
+		
+		//Redirect base on login status
 		if (loginStatus) {
 			response.sendRedirect("home.jsp");
 		} else {

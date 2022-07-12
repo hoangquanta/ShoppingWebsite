@@ -10,7 +10,7 @@
 <body>
 	<form action="login" method="post">
 	  <div class="imgcontainer">
-	    <img src="media/Logo.png" alt="Avatar" class="avatar">
+	    <img src="media/Logo.png" alt="Logo" class="avatar">
 	  </div>
 	
 	  <div class="container">

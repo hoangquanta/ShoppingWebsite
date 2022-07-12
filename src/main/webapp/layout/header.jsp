@@ -1,7 +1,7 @@
 <header>
 	<div class="logo">
-		<h1>Website</h1>
-		<p class="slogan">Website slogan should be here</p>
+		<img src="media/Logo.png" alt="Logo" width="100" height="100">
+		<p class="slogan">Smart phone shopping website</p>
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<ul class="navbar-nav ms-4">
